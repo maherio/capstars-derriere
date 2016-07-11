@@ -6,9 +6,9 @@ Requirements:
 Provide a RESTful API which returns the following data in JSON format
 
 * A list of sports, as well as an individual sport
-** A sport consists of an identifier and a public name.
+	* A sport consists of an identifier and a public name.
 * A list of players for a given sport, as well as an individual player
-** A player consists of a first name, last name, position, height and weight attributes, and bio.
+	* A player consists of a first name, last name, position, height and weight attributes, and bio.
 
 
 Notes:
