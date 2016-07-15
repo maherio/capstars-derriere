@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/maherio/capstars-derriere.svg?branch=master)](https://travis-ci.org/maherio/capstars-derriere)
 
-CapStars Derriere (get it? Because it's the backend) is a RESTful API which provides the complete data store for CapStars dynasty leagues, sports, players, etc.
+CapStars Derriere is the RESTful API backend which provides the complete data store for CapStars dynasty leagues, sports, players, etc.
 
 Requirements:
 
