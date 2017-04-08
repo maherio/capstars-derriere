@@ -8,10 +8,22 @@ Requirements:
 
 Provide a RESTful API which returns the following data in JSON format
 
-* A list of sports, as well as an individual sport
-	* A sport consists of an identifier and a public name.
-* A list of players for a given sport, as well as an individual player
-	* A player consists of a first name, last name, position, height and weight attributes, and bio.
+* Sport resource and collection (GET)
+	* A sport consists of at least a public name.
+* Position resource and collection (GET)
+	* A position belongs to a Sport and consists of a name and abbreviation.
+* Player resource and collection (GET)
+	* A player has a Position and consists of at least a first name, and last name.
+* League resource and collection (GET, PUT/POST, DELETE)
+	* A league belongs to a Sport, has a commissioner (User) and consists of a name.
+* League Settings collection (GET, PUT/POST)
+	* Settings that belong to a League, and will include things like roster position, scoring settings, password, salary cap, etc.
+* Roster resource and collection (GET, PUT/POST, DELETE)
+	* A roster belongs to a League and an owner (User), has Players and DraftPicks, and consists of a name, salary (total of signed players), penalty (total of cut players), etc.
+* Contract resource and collection (GET, PUT/POST, DELETE)
+	* A contract belongs to a Roster, has a Player, and consists of start date, end date, release date, and an amount for each year.
+* Stat resource and collection
+	* A stat belongs to a Player and consists of a metric, a value, and a date.
 
 Current Functionality:
 * None. Just getting a fresh lumen app up and running.
